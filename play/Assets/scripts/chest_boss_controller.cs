@@ -12,6 +12,7 @@ public class chest_boss_controller : MonoBehaviour
     public NavMeshAgent agent;
     public GameObject Portal;
     public float Distant = 10;
+    private bool Dead = false;
 
     void Start()
     {
@@ -23,24 +24,25 @@ public class chest_boss_controller : MonoBehaviour
 
     void Update()
     {
-        agent.destination = Player.transform.position;
+        if (!Dead)
+            agent.destination = Player.transform.position;
         if (Vector3.Distance(transform.position, Player.transform.position) <= Distant)
         {
-            Animator.Play("Attack01");
-            if (Animator.GetBool("end anim"))
+            if (!Dead)
             {
-                Player.GetComponent<hp>().GetDamage(Damage);
-                Animator.SetBool("end anim", false);
+                Animator.Play("Attack01");
+                if (Animator.GetBool("end anim"))
+                {
+                    Player.GetComponent<hp>().GetDamage(Damage);
+                    Animator.SetBool("end anim", false);
+                }
             }
         }
         else
         {
-            Animator.Play("WalkFWD");
+            if (!Dead)
+                Animator.Play("WalkFWD");
         }
-    }
-    private void OnDestroy()
-    {
-        Portal.SetActive(true);
     }
     public void GetDamage()
     {
@@ -49,6 +51,9 @@ public class chest_boss_controller : MonoBehaviour
 
     public void Death()
     {
+        agent.destination = transform.position;
         Animator.Play("Die");
+        Portal.SetActive(true);
+        Dead = true;
     }
 }

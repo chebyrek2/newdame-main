@@ -12,6 +12,9 @@ TagManager:
   - Pistol
   - chest
   - Tree
+  - chest_boss
+  - boom_
+  - fly
   layers:
   - Default
   - TransparentFX

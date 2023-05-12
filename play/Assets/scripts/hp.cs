@@ -57,6 +57,18 @@ public class hp : MonoBehaviour
             Destroy(gameObject);
             
         }
+        else if (tag == "boom_")
+        {
+            GetComponent<boombach>().Death();
+        }
+        else if (tag == "fly")
+        {
+            GetComponent<fly_animation>().Death();
+        }
+        else if (tag == "chest_boss")
+        {
+            GetComponent<chest_boss_controller>().Death();
+        }
         else
             Destroy(gameObject);
     }
