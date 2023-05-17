@@ -201,6 +201,7 @@ GameObject:
   - component: {fileID: 3211153708887812900}
   - component: {fileID: 3211153708887812901}
   - component: {fileID: 3211153708887812920}
+  - component: {fileID: 1400347841582032776}
   m_Layer: 0
   m_Name: fruit
   m_TagString: Untagged
@@ -313,6 +314,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+--- !u!65 &1400347841582032776
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3211153708887812898}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 2.421324, z: 0.9999999}
+  m_Center: {x: 0, y: 0.71066207, z: 0}
 --- !u!1 &3211153708888528379
 GameObject:
   m_ObjectHideFlags: 0

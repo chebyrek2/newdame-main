@@ -25,6 +25,14 @@ public class boombach : MonoBehaviour
 
     void Update()
     {
+        if (Dead)
+        {
+            if (gameObject.GetComponent<BoxCollider>().enabled)
+            {
+                gameObject.GetComponent<BoxCollider>().enabled = false;
+            }
+            return;
+        }
         if (!Dead)
             agent.destination = Player.transform.position;
         if (Vector3.Distance(transform.position, Player.transform.position) <= Distant)
