@@ -19,6 +19,7 @@ public class boombach : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         Portal.SetActive(false);
         Animator = GetComponent<Animator>();
+        
         Animator.Play("mon00_walk");
     }
 
@@ -38,7 +39,7 @@ public class boombach : MonoBehaviour
                 }
             }
         }
-        else
+        else 
         {
             if (!Dead)
                 Animator.Play("mon00_walk");
@@ -49,7 +50,7 @@ public class boombach : MonoBehaviour
     public void Death()
     {
         agent.destination = transform.position;
-        Animator.Play("mon00_attack01");
+        Animator.Play("mon00_attack01"); 
         Portal.SetActive(true);
         Dead = true;
     }
