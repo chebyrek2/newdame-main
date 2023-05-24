@@ -13477,6 +13477,36 @@ Transform:
   m_Father: {fileID: 854871898}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &919772198
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 919772199}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &919772199
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919772198}
+  m_LocalRotation: {x: 0.6185404, y: 0.37818712, z: -0.33894524, w: 0.59958196}
+  m_LocalPosition: {x: 49.866005, y: 0.06765627, z: -14.494045}
+  m_LocalScale: {x: 0.7951653, y: 0.9266981, z: 0.67135465}
+  m_Children: []
+  m_Father: {fileID: 1610170610}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: -266.46802, y: -33.727997, z: 265.3}
 --- !u!1 &921872276
 GameObject:
   m_ObjectHideFlags: 0
@@ -15827,6 +15857,7 @@ MonoBehaviour:
   Pula: {fileID: 7677439078157317346, guid: 7bd9035464329474d9f1839c7d82f664, type: 3}
   Player: {fileID: 1123905772}
   Pistol: {fileID: 2128750482}
+  Gun: {fileID: 919772198}
   Speed: 1555
   Cooldown: 0.3
 --- !u!1 &1288484173 stripped

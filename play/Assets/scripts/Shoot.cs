@@ -10,6 +10,7 @@ public class Shoot : MonoBehaviour
     public GameObject Pula;
     public GameObject Player;
     public GameObject Pistol;
+    public GameObject Gun;
     public float Speed;
     public float Cooldown;
 
@@ -29,7 +30,7 @@ public class Shoot : MonoBehaviour
             {
                 _Cooldown = Cooldown;
                 AudioSource.PlayClipAtPoint(ShootSound, SootPlace.position);
-                GameObject instance = Instantiate(Pula, Pistol.transform.position, Pistol.transform.rotation);
+                GameObject instance = Instantiate(Pula, Pistol.transform.position, Gun.transform.rotation);
                 instance.GetComponent<Rigidbody>().AddForce(Pistol.transform.forward * Speed);
                 _CanShoot = false;
             }

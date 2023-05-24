@@ -1480,6 +1480,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bceefb2a39f6db74d9bc9d006687b7f1, type: 3}
+--- !u!1 &1289110296
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1289110297}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1289110297
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289110296}
+  m_LocalRotation: {x: 0.6185404, y: 0.3781871, z: -0.33894524, w: 0.59958196}
+  m_LocalPosition: {x: 37.310997, y: -4.439001, z: -19.498528}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224599197}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: -266.46802, y: -33.727997, z: 265.3}
 --- !u!114 &1343224404 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7077354426790975853, guid: a1a1187182bbaa1468f3126712bb6d90,
@@ -2130,6 +2160,7 @@ MonoBehaviour:
   Pula: {fileID: 9026802177151390920, guid: d5b27319cd59cd140960ce8f3b48ba2e, type: 3}
   Player: {fileID: 1519639377}
   Pistol: {fileID: 1084660211}
+  Gun: {fileID: 1289110296}
   Speed: 1555
   Cooldown: 0.3
 --- !u!1 &2077516213 stripped
