@@ -210,7 +210,7 @@ Animator:
   m_GameObject: {fileID: 220579263478113668}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 97e7b2e9aff997844b8b8dd53b0fffc1, type: 3}
-  m_Controller: {fileID: 9100000, guid: ad18e1e3bc906104699c48eb7dfd95dc, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3510b2ff2d0aa4347b09457840e1d4d0, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -260,6 +260,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   Damage: 30
   agent: {fileID: 6645599501163675617}
+  Gate: {fileID: 0}
 --- !u!195 &6645599501163675617
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -296,6 +297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHP: 100
   HpBar: {fileID: 6645599500191202803}
+  DestroyEffect: {fileID: 0}
 --- !u!1 &220579263478113670
 GameObject:
   m_ObjectHideFlags: 0

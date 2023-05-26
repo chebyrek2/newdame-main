@@ -1250,13 +1250,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 692703910}
-  m_LocalRotation: {x: 0.6185404, y: 0.3781871, z: -0.3389452, w: 0.59958196}
-  m_LocalPosition: {x: 0.7309986, y: 0.3210002, z: -0.0000006556511}
+  m_LocalRotation: {x: 0.6332398, y: 0.35067648, z: -0.31061542, w: 0.6160775}
+  m_LocalPosition: {x: 0.73099905, y: 0.3210002, z: -0.000000059604645}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2070709084}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: -266.46802, y: -33.727997, z: 265.3}
+  m_LocalEulerAnglesHint: {x: -266.46802, y: -758.916, z: 265.297}
 --- !u!1 &693076320 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 3e8a43558db0cac478d4d6d833479cbe,
@@ -1875,7 +1875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c058a8998710a24a8c85ed1ebbc167f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 50
+  Damage: 0
   Player: {fileID: 461719960}
   agent: {fileID: 1172355868}
   Portal: {fileID: 888067010}
@@ -1910,8 +1910,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3832703582600944448, guid: bceefb2a39f6db74d9bc9d006687b7f1,
         type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3832703582600944448, guid: bceefb2a39f6db74d9bc9d006687b7f1,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.735
+      value: 0.7350006
       objectReference: {fileID: 0}
     - target: {fileID: 3832703582600944448, guid: bceefb2a39f6db74d9bc9d006687b7f1,
         type: 3}
@@ -1921,7 +1926,7 @@ PrefabInstance:
     - target: {fileID: 3832703582600944448, guid: bceefb2a39f6db74d9bc9d006687b7f1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.803
+      value: 0.8029995
       objectReference: {fileID: 0}
     - target: {fileID: 3832703582600944448, guid: bceefb2a39f6db74d9bc9d006687b7f1,
         type: 3}
@@ -1931,7 +1936,7 @@ PrefabInstance:
     - target: {fileID: 3832703582600944448, guid: bceefb2a39f6db74d9bc9d006687b7f1,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3832703582600944448, guid: bceefb2a39f6db74d9bc9d006687b7f1,
         type: 3}
@@ -1941,7 +1946,7 @@ PrefabInstance:
     - target: {fileID: 3832703582600944448, guid: bceefb2a39f6db74d9bc9d006687b7f1,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3832703582600944448, guid: bceefb2a39f6db74d9bc9d006687b7f1,
         type: 3}
@@ -2131,6 +2136,16 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6415118902637243235, guid: 2a0e03a0a9c48944f9628c80ffa987e5,
+        type: 3}
+      propertyPath: avoidancePriority
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6415118902637243235, guid: 2a0e03a0a9c48944f9628c80ffa987e5,
+        type: 3}
+      propertyPath: m_ObstacleAvoidanceType
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6415118902637243239, guid: 2a0e03a0a9c48944f9628c80ffa987e5,
         type: 3}
       propertyPath: MaxHP
@@ -2208,6 +2223,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6415118902637243232, guid: 2a0e03a0a9c48944f9628c80ffa987e5, type: 3}
+    - {fileID: -6297892032749211523, guid: 2a0e03a0a9c48944f9628c80ffa987e5, type: 3}
+    - {fileID: 324644757071528004, guid: 2a0e03a0a9c48944f9628c80ffa987e5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2a0e03a0a9c48944f9628c80ffa987e5, type: 3}
 --- !u!4 &1343998369 stripped
 Transform:

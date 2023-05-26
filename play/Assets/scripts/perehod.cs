@@ -35,4 +35,12 @@ public class perehod : MonoBehaviour
     {
         SceneManager.LoadScene(6);
     }
+    public void Lesson()
+    {
+        SceneManager.LoadScene(9);
+    }
+    public void Menu3()
+    {
+        SceneManager.LoadScene(10);
+    }
 }

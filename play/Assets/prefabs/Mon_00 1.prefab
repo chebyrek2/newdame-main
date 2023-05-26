@@ -5416,8 +5416,9 @@ GameObject:
   - component: {fileID: 6415118902637243234}
   - component: {fileID: 6415118902637243233}
   - component: {fileID: 6415118902637243235}
-  - component: {fileID: 6415118902637243232}
   - component: {fileID: 6415118902637243239}
+  - component: {fileID: 324644757071528004}
+  - component: {fileID: -6297892032749211523}
   m_Layer: 0
   m_Name: Mon_00 1
   m_TagString: Untagged
@@ -5511,22 +5512,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &6415118902637243232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6413515756098152454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d4e6f292b53f114db11532decb60219, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Damage: 50
-  agent: {fileID: 6415118902637243235}
-  Gate: {fileID: 0}
 --- !u!114 &6415118902637243239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5543,6 +5528,36 @@ MonoBehaviour:
   HpBar: {fileID: 1151396234880350076}
   DestroyEffect: {fileID: 7465898684824936041, guid: 9038f1212e4c84d438b8bcbcc66f43d7,
     type: 3}
+--- !u!114 &324644757071528004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6413515756098152454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4da0aa48dfb5d46b0cf76457c9ac46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  Damage: 50
+--- !u!114 &-6297892032749211523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6413515756098152454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d4e6f292b53f114db11532decb60219, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  Damage: 50
+  agent: {fileID: 6415118902637243235}
+  Gate: {fileID: 0}
 --- !u!1 &6413520798716031424
 GameObject:
   m_ObjectHideFlags: 0
