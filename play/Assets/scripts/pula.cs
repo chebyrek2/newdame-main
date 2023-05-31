@@ -22,7 +22,7 @@ public class pula : MonoBehaviour
         var anim = collision.gameObject.GetComponent<hp>();
         if (anim != null) 
         {
-            anim.GetDamage(35);
+            anim.GetDamage(Damage);
         }
     }
     

@@ -755,6 +755,156 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.14999998, y: 0.49999997, z: 0.14999998}
   m_Center: {x: 0, y: 0, z: -0.00000023841858}
+--- !u!1001 &168741793
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5252505348259375188, guid: ee3f61a63b1135346bf9fa8e27a2f30f,
+        type: 3}
+      propertyPath: m_Name
+      value: Particle System 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252505348259375190, guid: ee3f61a63b1135346bf9fa8e27a2f30f,
+        type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252505348259375190, guid: ee3f61a63b1135346bf9fa8e27a2f30f,
+        type: 3}
+      propertyPath: lengthInSec
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252505348259375190, guid: ee3f61a63b1135346bf9fa8e27a2f30f,
+        type: 3}
+      propertyPath: ShapeModule.angle
+      value: 29.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252505348259375190, guid: ee3f61a63b1135346bf9fa8e27a2f30f,
+        type: 3}
+      propertyPath: startDelay.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252505348259375190, guid: ee3f61a63b1135346bf9fa8e27a2f30f,
+        type: 3}
+      propertyPath: ShapeModule.arc.mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252505348259375190, guid: ee3f61a63b1135346bf9fa8e27a2f30f,
+        type: 3}
+      propertyPath: ShapeModule.arc.value
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252505348259375190, guid: ee3f61a63b1135346bf9fa8e27a2f30f,
+        type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252505348259375190, guid: ee3f61a63b1135346bf9fa8e27a2f30f,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252505348259375190, guid: ee3f61a63b1135346bf9fa8e27a2f30f,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252505348259375190, guid: ee3f61a63b1135346bf9fa8e27a2f30f,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.4528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252505348259375190, guid: ee3f61a63b1135346bf9fa8e27a2f30f,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.4528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252505348259375190, guid: ee3f61a63b1135346bf9fa8e27a2f30f,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.4528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252505348259375273, guid: ee3f61a63b1135346bf9fa8e27a2f30f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252505348259375273, guid: ee3f61a63b1135346bf9fa8e27a2f30f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252505348259375273, guid: ee3f61a63b1135346bf9fa8e27a2f30f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252505348259375273, guid: ee3f61a63b1135346bf9fa8e27a2f30f,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252505348259375273, guid: ee3f61a63b1135346bf9fa8e27a2f30f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 41.3518
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252505348259375273, guid: ee3f61a63b1135346bf9fa8e27a2f30f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8965435
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252505348259375273, guid: ee3f61a63b1135346bf9fa8e27a2f30f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -45.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252505348259375273, guid: ee3f61a63b1135346bf9fa8e27a2f30f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252505348259375273, guid: ee3f61a63b1135346bf9fa8e27a2f30f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252505348259375273, guid: ee3f61a63b1135346bf9fa8e27a2f30f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252505348259375273, guid: ee3f61a63b1135346bf9fa8e27a2f30f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252505348259375273, guid: ee3f61a63b1135346bf9fa8e27a2f30f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252505348259375273, guid: ee3f61a63b1135346bf9fa8e27a2f30f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252505348259375273, guid: ee3f61a63b1135346bf9fa8e27a2f30f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ee3f61a63b1135346bf9fa8e27a2f30f, type: 3}
+--- !u!198 &168741794 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5252505348259375190, guid: ee3f61a63b1135346bf9fa8e27a2f30f,
+    type: 3}
+  m_PrefabInstance: {fileID: 168741793}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &176233156 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: ad296451297fb5041a5a13cc354c0bf3,
@@ -12164,6 +12314,7 @@ MonoBehaviour:
   Gun: {fileID: 2075848408}
   Speed: 1555
   Cooldown: 0.3
+  partics: {fileID: 168741794}
 --- !u!1 &1836219289 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: ad296451297fb5041a5a13cc354c0bf3,

@@ -13,6 +13,7 @@ public class Shoot : MonoBehaviour
     public GameObject Gun;
     public float Speed;
     public float Cooldown;
+    public ParticleSystem partics;
 
     private float _Cooldown;
     private bool _CanShoot = true;
@@ -33,6 +34,11 @@ public class Shoot : MonoBehaviour
                 GameObject instance = Instantiate(Pula, Pistol.transform.position, Gun.transform.rotation);
                 instance.GetComponent<Rigidbody>().AddForce(Pistol.transform.forward * Speed);
                 _CanShoot = false;
+                if (partics != null)
+                {
+                    partics.gameObject.transform.position = SootPlace.position;
+                    partics.Play();
+                }
             }
 
         }
@@ -48,5 +54,6 @@ public class Shoot : MonoBehaviour
         {
 
         }
+        
     }
 }

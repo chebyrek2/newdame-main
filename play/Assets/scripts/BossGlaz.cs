@@ -7,6 +7,7 @@ public class BossGlaz : MonoBehaviour
     public GameObject Player;
     public GameObject Bullet;
     public GameObject SpawnPlace;
+    public GameObject SpawnPlace2;
     public float Cooldown = 1;
     private float _Cooldown;
     public float Force = 1500;
@@ -29,7 +30,7 @@ public class BossGlaz : MonoBehaviour
             {
                 if (hit.collider.gameObject.tag == "Player")
                 {
-                    var instance = Instantiate(Bullet, SpawnPlace.transform.position, SpawnPlace.transform.rotation);
+                    var instance = Instantiate(Bullet, SpawnPlace.transform.position, SpawnPlace2.transform.rotation);
                     Debug.Log($"Spawn at x: {instance.transform.position.x} y: {instance.transform.position.y}, z: {instance.transform.position.z}");
                     instance.GetComponent<Rigidbody>().AddForce(SpawnPlace.transform.forward * Force);
                     _Cooldown = Cooldown;

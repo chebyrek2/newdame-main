@@ -9,6 +9,7 @@ public class fly_animation : MonoBehaviour
     private Animator Animator;
     public int Damage = 40;
     public GameObject Player;
+    public GameObject Rotation;
     
     public GameObject Portal;
     public float Distant = 10;
@@ -58,7 +59,8 @@ public class fly_animation : MonoBehaviour
                 {
                     if (hit.collider.gameObject.tag == "Player")
                     {
-                        var instance = Instantiate(Bullet, SpawnPlace.transform.position, SpawnPlace.transform.rotation);
+                        var instance = Instantiate(Bullet, SpawnPlace.transform.position, Rotation.transform.rotation);
+                        instance.GetComponent<pula>().Damage = Damage;
                         Debug.Log($"Spawn at x: {instance.transform.position.x} y: {instance.transform.position.y}, z: {instance.transform.position.z}");
                         instance.GetComponent<Rigidbody>().AddForce(SpawnPlace.transform.forward * Force);
                         _Cooldown = Cooldown;

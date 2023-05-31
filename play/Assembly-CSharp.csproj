@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Reversed Interactive\The Portal Collection\Scripts\SimpleCameraControllerPortals.cs" />
+    <Compile Include="Assets\rotation_script.cs" />
     <Compile Include="Assets\scripts\BossGlaz.cs" />
     <Compile Include="Assets\scripts\Bosses.cs" />
     <Compile Include="Assets\scripts\EnemyMoveLogic.cs" />
