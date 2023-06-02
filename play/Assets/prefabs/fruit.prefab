@@ -313,7 +313,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbc20e6955b4faa4fb9a3281872553d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  PrefabAnim: {fileID: 5765186522015509745, guid: 086d5977937be5e4a83c181761a979b7,
+    type: 3}
 --- !u!65 &1400347841582032776
 BoxCollider:
   m_ObjectHideFlags: 0

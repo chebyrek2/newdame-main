@@ -18,9 +18,6 @@ public class hp : MonoBehaviour
 
     public void GetDamage(int damage)
     {
-        if (tag == "Tree")
-            GetComponent<Tree>().DropHeal();
-
         if (damage >= HP)
         {
             HP = 0;
@@ -48,14 +45,6 @@ public class hp : MonoBehaviour
         {
             SceneManager.LoadScene(2);
             Cursor.lockState = CursorLockMode.None;
-        }
-        else if (tag == "Tree")
-        {
-            
-
-            DestroyEffect.Play();
-            Destroy(gameObject);
-            
         }
         else if (tag == "boom_")
         {

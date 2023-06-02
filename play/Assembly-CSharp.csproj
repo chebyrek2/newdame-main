@@ -84,6 +84,7 @@
     <Compile Include="Assets\scripts\pula.cs" />
     <Compile Include="Assets\scripts\redzombie.cs" />
     <Compile Include="Assets\scripts\spawn.cs" />
+    <Compile Include="Assets\scripts\speedfruit.cs" />
     <Compile Include="Assets\scripts\vzriv.cs" />
     <Compile Include="Assets\scripts\zombie.cs" />
     <Compile Include="Assets\work.cs" />

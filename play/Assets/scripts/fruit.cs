@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class fruit : MonoBehaviour
-    
+public class fruit : MonoBehaviour   
 {
-    public GameObject player;
-    
+    public ParticleSystem PrefabAnim;
 
     public void OnTriggerEnter(Collider other)
     {
@@ -14,12 +12,11 @@ public class fruit : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             Destroy(this.gameObject);
-
-
-        }
-        if (other.gameObject.tag == "Player")
-        {
+            var instance = Instantiate(PrefabAnim, transform.position, Quaternion.identity);
+            instance.transform.position = transform.position;
+            instance.Play();
             other.gameObject.GetComponent<hp>().Heal(20);
+            Debug.Log("aiywgdasiuygdywgil");
         }
 
 

@@ -5,7 +5,8 @@ using UnityEngine;
 public class player : MonoBehaviour
 {
 
-    public float Speed;
+    public static float Speed = 15;
+    public static float MaxSpeed = 100;
 
     CharacterController characterController;
 
@@ -23,6 +24,15 @@ public class player : MonoBehaviour
 
         move = transform.right * horizontal + transform.forward * vertical;
         characterController.Move(move * Speed * Time.deltaTime);
+        
+    }
+    public void SpeedPlus()
+    {
+        Speed = Speed * 2.2f;
+        if (Speed >= MaxSpeed)
+        {
+            Speed = MaxSpeed;
+        }
         
     }
 }

@@ -9,7 +9,8 @@ public class Tree : MonoBehaviour
     private hp HP;
     public ParticleSystem explosion;
     public ParticleSystem PS;              //Particle system
-
+    private int MaxShoots = 3;
+    private int _countShoot = 0;
     private void Start()
     {
         PS = Instantiate(explosion, this.gameObject.transform);
@@ -18,6 +19,18 @@ public class Tree : MonoBehaviour
     private void Update()
     {
         PS.transform.position = this.gameObject.transform.position;
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "aboba")
+        {
+            DropHeal();
+            _countShoot++;
+            if(_countShoot == MaxShoots)
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 
     public void DropHeal()
