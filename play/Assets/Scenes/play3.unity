@@ -612,13 +612,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 248786078}
-  m_LocalRotation: {x: 0.92555267, y: -0.009926733, z: 0.20447344, w: -0.31850332}
+  m_LocalRotation: {x: 0.27841073, y: 0.58811, z: -0.73841417, w: -0.17708386}
   m_LocalPosition: {x: -0.014998353, y: 1.4290053, z: 0.6249926}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1967129582121622264}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 1295.84, y: -28.339996, z: 1090.564}
+  m_LocalEulerAnglesHint: {x: 4449.652, y: -1696.106, z: 3892.63}
 --- !u!114 &248786080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1628,7 +1628,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 026b31d62f515574b9090095b64e6032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 15
 --- !u!143 &1519639381
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2377,7 +2376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8837c841068d8404387ec1e4e7f648cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 0
+  Damage: 40
   Player: {fileID: 1519639377}
   Rotation: {fileID: 248786078}
   Portal: {fileID: 47037681}
@@ -2453,7 +2452,7 @@ PrefabInstance:
     - target: {fileID: 1967129582696296544, guid: a1a1187182bbaa1468f3126712bb6d90,
         type: 3}
       propertyPath: MaxHP
-      value: 3000
+      value: 100000
       objectReference: {fileID: 0}
     - target: {fileID: 1967129582696296556, guid: a1a1187182bbaa1468f3126712bb6d90,
         type: 3}

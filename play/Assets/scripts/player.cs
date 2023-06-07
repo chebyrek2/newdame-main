@@ -28,7 +28,7 @@ public class player : MonoBehaviour
     }
     public void SpeedPlus()
     {
-        Speed = Speed * 2.2f;
+        Speed = Speed * 1.1f;
         if (Speed >= MaxSpeed)
         {
             Speed = MaxSpeed;
