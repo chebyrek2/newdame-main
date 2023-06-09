@@ -10,6 +10,7 @@ public class fly_animation : MonoBehaviour
     public int Damage = 40;
     public GameObject Player;
     public GameObject Rotation;
+    public GameObject EmptyHP;
     
     public GameObject Portal;
     public float Distant = 10;
@@ -81,5 +82,6 @@ public class fly_animation : MonoBehaviour
         Animator.Play("Die");
         Portal.SetActive(true);
         Dead = true;
+        Destroy(EmptyHP);
     }
 }

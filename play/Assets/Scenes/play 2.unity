@@ -830,6 +830,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1748206173}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &402766466 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1151396234053023744, guid: 2a0e03a0a9c48944f9628c80ffa987e5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1312991229}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &420206247
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -965,7 +971,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 026b31d62f515574b9090095b64e6032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 15
 --- !u!143 &461719964
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2030,6 +2035,7 @@ MonoBehaviour:
   agent: {fileID: 1172355868}
   Portal: {fileID: 888067010}
   Distant: 10
+  EmptyHP: {fileID: 402766466}
 --- !u!195 &1172355868 stripped
 NavMeshAgent:
   m_CorrespondingSourceObject: {fileID: 6415118902637243235, guid: 2a0e03a0a9c48944f9628c80ffa987e5,

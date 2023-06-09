@@ -43,4 +43,8 @@ public class perehod : MonoBehaviour
     {
         SceneManager.LoadScene(10);
     }
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }

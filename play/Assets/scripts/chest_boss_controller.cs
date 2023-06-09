@@ -13,6 +13,7 @@ public class chest_boss_controller : MonoBehaviour
     public GameObject Portal;
     public float Distant = 10;
     private bool Dead = false;
+    public GameObject EmptyHP;
 
     void Start()
     {
@@ -55,5 +56,6 @@ public class chest_boss_controller : MonoBehaviour
         Animator.Play("Die");
         Portal.SetActive(true);
         Dead = true;
+        Destroy(EmptyHP);
     }
 }

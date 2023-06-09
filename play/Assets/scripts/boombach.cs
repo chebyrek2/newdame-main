@@ -13,6 +13,7 @@ public class boombach : MonoBehaviour
     public GameObject Portal;
     public float Distant = 10;
     private bool Dead = false;
+    public GameObject EmptyHP;
 
     void Start()
     {
@@ -61,5 +62,6 @@ public class boombach : MonoBehaviour
         Animator.Play("mon00_attack01"); 
         Portal.SetActive(true);
         Dead = true;
+        Destroy(EmptyHP);
     }
 }
