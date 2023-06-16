@@ -11,6 +11,7 @@ public class fly_animation : MonoBehaviour
     public GameObject Player;
     public GameObject Rotation;
     public GameObject EmptyHP;
+    public GameObject SPawnPlace;
     
     public GameObject Portal;
     public float Distant = 10;
@@ -22,6 +23,13 @@ public class fly_animation : MonoBehaviour
     public float Cooldown = 1;
     private float _Cooldown;
     public float Force = 1500;
+    public ParticleSystem Partics;
+    public GameObject SawnPlace;
+
+
+
+
+    public ParticleSystem partics { get => partics; set => partics = value; }
 
     void Start()
     {
@@ -30,6 +38,10 @@ public class fly_animation : MonoBehaviour
         Portal.SetActive(false);
         Animator = GetComponent<Animator>();
         
+
+
+
+
     }
 
     void Update()
@@ -82,6 +94,17 @@ public class fly_animation : MonoBehaviour
         Animator.Play("Die");
         Portal.SetActive(true);
         Dead = true;
-        Destroy(EmptyHP);
+        Destroy(EmptyHP);   
+    }
+    public void ParticsPlay()
+    {
+        
+        
+            if (Partics != null)
+            {
+                Partics.transform.position = SawnPlace.transform.position;
+                Partics.Play();
+            }
+        
     }
 }

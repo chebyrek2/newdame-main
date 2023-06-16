@@ -22,6 +22,8 @@ public class Shoot : MonoBehaviour
         _Cooldown = Cooldown;
     }
 
+    
+
     // Update is called once per frame
     void Update()
     {
