@@ -8024,7 +8024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4697a5e3ed118ec448055540a81b030b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NumOfScene: 0
+  NumOfScene: 6
 --- !u!1001 &757105105
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11554,7 +11554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4697a5e3ed118ec448055540a81b030b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NumOfScene: 5
+  NumOfScene: 6
 --- !u!1 &1552384336
 GameObject:
   m_ObjectHideFlags: 0

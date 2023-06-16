@@ -7,41 +7,41 @@ public class perehod : MonoBehaviour
 {
     public void Play()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
     public void Lose()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
     
-        public void Menu()
+    public void Menu()
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
     public void Menu2()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(5);
     }
     public void Play2()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
     }
     public void Play3()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(6);
     }
 
     public void Play4()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(7);
     }
     public void Lesson()
     {
-        SceneManager.LoadScene(9);
+        SceneManager.LoadScene(10);
     }
     public void Menu3()
     {
-        SceneManager.LoadScene(10);
+        SceneManager.LoadScene(11);
     }
     public void Exit()
     {
