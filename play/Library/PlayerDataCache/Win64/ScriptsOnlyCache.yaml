@@ -46,6 +46,61 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.RawImage
     - UnityEngine.UI.Text
   sceneClasses:
+    Assets/Scenes/add.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11318}
+    - Class: 114
+      Script: {instanceID: 11320}
+    - Class: 114
+      Script: {instanceID: 11348}
+    - Class: 114
+      Script: {instanceID: 11576}
+    - Class: 114
+      Script: {instanceID: 12128}
+    - Class: 114
+      Script: {instanceID: 12718}
+    - Class: 114
+      Script: {instanceID: 12750}
+    - Class: 114
+      Script: {instanceID: 13628}
+    - Class: 114
+      Script: {instanceID: 13878}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/lesson.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -552,7 +607,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13944}
     - Class: 114
-      Script: {instanceID: 18078}
+      Script: {instanceID: 18248}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 136
@@ -766,7 +821,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13944}
     - Class: 114
-      Script: {instanceID: 18078}
+      Script: {instanceID: 18248}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 136
@@ -881,7 +936,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13944}
     - Class: 114
-      Script: {instanceID: 16194}
+      Script: {instanceID: 16350}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 136
@@ -1697,6 +1752,7 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 19
   scenePathNames:
+  - Assets/Scenes/add.unity
   - Assets/Scenes/menu.unity
   - Assets/Scenes/play.unity
   - Assets/Scenes/lose.unity
