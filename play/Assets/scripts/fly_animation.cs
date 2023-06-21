@@ -12,12 +12,14 @@ public class fly_animation : MonoBehaviour
     public GameObject Rotation;
     public GameObject EmptyHP;
     public GameObject SPawnPlace;
-    
+    public GameObject ParticleS;
+
+
     public GameObject Portal;
     public float Distant = 10;
     private bool Dead = false;
 
-    //public GameObject Player;
+    public GameObject RotationPS;
     public GameObject Bullet;
     public GameObject SpawnPlace;
     public float Cooldown = 1;
@@ -92,19 +94,10 @@ public class fly_animation : MonoBehaviour
     {
         
         Animator.Play("Die");
+        var instance = Instantiate(ParticleS, new Vector3(Portal.transform.position.x, Portal.transform.position.y+10, Portal.transform.position.z), RotationPS.transform.rotation);
         Portal.SetActive(true);
         Dead = true;
         Destroy(EmptyHP);   
     }
-    public void ParticsPlay()
-    {
-        
-        
-            if (Partics != null)
-            {
-                Partics.transform.position = SawnPlace.transform.position;
-                Partics.Play();
-            }
-        
-    }
+    
 }

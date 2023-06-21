@@ -14,6 +14,9 @@ public class chest_boss_controller : MonoBehaviour
     public float Distant = 10;
     private bool Dead = false;
     public GameObject EmptyHP;
+    public GameObject ParticleS;
+    public Vector3 Smesh;
+    public GameObject RotationPS;
 
     void Start()
     {
@@ -54,6 +57,7 @@ public class chest_boss_controller : MonoBehaviour
     {
         agent.destination = transform.position;
         Animator.Play("Die");
+        var instance = Instantiate(ParticleS, Portal.transform.position + Smesh, RotationPS.transform.rotation);
         Portal.SetActive(true);
         Dead = true;
         Destroy(EmptyHP);

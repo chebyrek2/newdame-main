@@ -14,6 +14,9 @@ public class boombach : MonoBehaviour
     public float Distant = 10;
     private bool Dead = false;
     public GameObject EmptyHP;
+    public GameObject RotationPS;
+    public GameObject ParticleS;
+    public Vector3 Smesh;
 
     void Start()
     {
@@ -59,7 +62,8 @@ public class boombach : MonoBehaviour
     public void Death()
     {
         agent.destination = transform.position;
-        Animator.Play("mon00_attack01"); 
+        Animator.Play("mon00_attack01");
+        var instance = Instantiate(ParticleS, Portal.transform.position+Smesh, RotationPS.transform.rotation);
         Portal.SetActive(true);
         Dead = true;
         Destroy(EmptyHP);
